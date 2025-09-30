@@ -1,10 +1,12 @@
 package dev.khang.runners.run;
 
+import java.time.LocalDateTime;
+
 public record Run(
         Integer id,
         String title,
-        String startedOn,
-        String completedOn,
+        LocalDateTime startedOn,
+        LocalDateTime completedOn,
         Integer miles,
         Location location
 ) {}
